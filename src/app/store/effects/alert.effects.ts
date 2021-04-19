@@ -37,7 +37,7 @@ export class AlertEffects {
       ),
     { dispatch: false }
   );
-
+/*
   youAreLoggedOut$ = createEffect(
     () =>
       this.actions$.pipe(
@@ -158,6 +158,6 @@ export class AlertEffects {
       ),
     { dispatch: false }
   );
-
+ */
   constructor(private actions$: Actions, private alertService: AlertService) {}
 }

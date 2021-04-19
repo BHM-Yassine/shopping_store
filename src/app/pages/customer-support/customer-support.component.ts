@@ -17,7 +17,6 @@ import * as fromSelectors from 'src/app/store/selectors/customer-support.selecto
 })
 export class CustomerSupportComponent implements OnInit {
   constructor(
-    private customerSupportService: CustomerSupportService,
     private store: Store<AppState>
   ) {}
 

@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { AuthService } from '../resources/auth.service';
 import { User } from '../resources/auth';
 import { Observable } from 'rxjs';
 import { MockApiCartService } from '../../cart/resources/mock-api-cart.service';
@@ -18,7 +17,6 @@ export class LoginModalComponent implements OnInit {
   user: User;
   user$: Observable<User>;
   constructor(
-    public authService: AuthService,
     private cartService: MockApiCartService,
     private modalService: ModalService,
     private store: Store<AppState>

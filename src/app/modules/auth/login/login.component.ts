@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthService } from '../resources/auth.service';
 import { NgForm } from '@angular/forms';
 import { MockApiCartService } from '../../cart/resources/mock-api-cart.service';
 import { User } from '../resources/auth';
@@ -14,7 +13,6 @@ import { AppState } from 'src/app/store';
 })
 export class LoginComponent implements OnInit {
   constructor(
-    private authService: AuthService,
     private cartService: MockApiCartService,
     private store: Store<AppState>
   ) {}
